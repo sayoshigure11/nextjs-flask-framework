@@ -67,5 +67,11 @@ def healthchecker():
     return {"status": "success", "message": "Integrate Flask Framework with Next.js"}
 
 
+@app.route("/api/health", methods=["GET"])
+def health():
+    return {"status": "success", "message": "Integrate Flask Framework with Next.js"}
+
+
+
 if __name__ == "__main__":
     app.run()
